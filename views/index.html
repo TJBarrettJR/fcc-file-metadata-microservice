@@ -1,0 +1,28 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Metadata Microservice</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        File Metadata Microservice
+      </h1>
+    </header>
+
+    <main>
+      <h3 class="bold">Submit a file to view its filesize.</h3>
+      <form method="post" action="/get-file-size/" enctype="multipart/form-data">
+        <input name="selected-file" type="file">
+        <button>Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
